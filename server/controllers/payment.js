@@ -33,7 +33,7 @@ function checkSaveCard(req, res) {
                     returnObj.message = "Card not present";
                     returnObj.data = null;
                     res.send(returnObj);
-                });
+                }); TransactionsModel
             }
         }).catch(err => {
             returnObj.success = false;
@@ -75,13 +75,13 @@ function addCard(req, res) {
                                 });
                                 if (checkUser) {
                                     res.send({ message: 'Card Already Present' });
-                                } else if (paymentDetails.saveCard) {
+                                } else if (cardDetails.saveCard) {
                                     newCardDetails.push(newCard);
                                     PaymentsModel.findOneAndUpdateAsync({ ref: id, deleted: false }, { $set: { cardDetails: newCardDetails } }, { new: true }) //eslint-disable-line
                                         .then((updateCard) => {
                                             returnObj.success = true;
                                             returnObj.message = "Successfully Added";
-                                            returnObj.data = findPayment;
+                                            returnObj.data = updateCard;
                                             res.send(returnObj);
                                         })
                                         .catch((err) => {
@@ -109,10 +109,10 @@ function addCard(req, res) {
                                 return stripe.customers.createSource(customer.id, {
                                     source: {
                                         object: 'card',
-                                        exp_month: paymentDetails.expiryMonth,
-                                        exp_year: paymentDetails.expiryYear,
-                                        number: paymentDetails.cardNumber,
-                                        cvc: paymentDetails.cvc,
+                                        exp_month: cardDetails.expiryMonth,
+                                        exp_year: cardDetails.expiryYear,
+                                        number: cardDetails.cardNumber,
+                                        cvc: cardDetails.cvc,
                                     },
                                 });
                             })
@@ -234,13 +234,23 @@ function updateCard(req, res) {
             res.send({ data: err, message: 'Error in updating card details' });
         });
 }
-function cardPay(req,res,next){
-    let paymentObj={
-        email:req.body.email,
-        subscriptionAmount:req.body.amount,
-        currency:req.body.currency,
-
+function cardPay(req, res, next) {
+    let paymentObj = {
+        email: req.body.email,
+        subscriptionAmount: req.body.amount,
+        currency: req.body.currency,
     }
+    cardPaymentProcess(paymentObj).then((paydetail)=>{
+        returnObj.success = true;
+        returnObj.message = "payment scuessfully done";
+        returnObj.data = paydetail;
+        res.send(returnObj);
+    }).catch((err)=>{
+        returnObj.success = false;
+        returnObj.message = "payment fail";
+        returnObj.data = null;
+        res.send(returnObj);
+    })
 
 }
 function cardPaymentProcess(subscriptionObj) {
@@ -261,50 +271,85 @@ function cardPaymentProcess(subscriptionObj) {
                                 customer: user.userCardId,
                             })
                             .then((charge) => {
-                                const paymentStatus = charge.status;
+                                const { id, status } = charge;
                                 // add transaction here
-                                resolve(paymentStatus);
+
+                                const transactionDetails = new TransactionsModel({
+                                    bookingId,
+                                    stripeChargeId: id,
+                                    amount,
+                                    status,
+                                    from,
+                                    to,
+                                    payoutDue,
+                                    timestamp: Date.now(),	// the date when transaction was initiated
+                                    payoutDone: false,	// will be done after the class is completed
+                                    stripeChargeResponse: charge,
+                                });
+                                transactionDetails.save()
+                                    .then((doc) => resolve(doc))
+                                    .catch(err => reject(charge));
                             })
+                            // resolve(paymentStatus);
                             .catch((err) => {
                                 const paymentStatus = 'error';
                                 console.log(err); //eslint-disable-line
                                 // transaction here failed
-                                resolve(paymentStatus);
+
+                                const transactionDetails = new TransactionsModel({
+                                    bookingId,
+                                    stripeChargeId: id,
+                                    amount,
+                                    status,
+                                    from,
+                                    to,
+                                    payoutDue,
+                                    timestamp: Date.now(),	// the date when transaction was initiated
+                                    payoutDone: false,	// will be done after the class is completed
+                                    stripeChargeResponse: charge,
+                                });
+                                transactionDetails.save()
+                                    .then((doc) => resolve(doc))
+                                    .catch(err => reject(charge));
+                                // resolve(paymentStatus);
                             });
                     })
-                        .catch((err) => {
-                            const paymentStatus = 'error';
-                            console.log(err); //eslint-disable-line
-                            reject(paymentStatus);
-                        });
                 }
-            }).catch((e) => {
-                console.log('test', e); //eslint-disable-line
+            })
+            .catch((err) => {
+                const paymentStatus = 'error';
+                console.log(err); //eslint-disable-line
+                reject(paymentStatus);
             });
     })
+    // }).catch((e) => {
+    //     console.log('test', e); //eslint-disable-line
+    // });
+    // })
 }
 
-function saveTransaction(tripObj) {
-    const transactionOwner = new Transaction({
-      userIdFrom: tripObj.riderId,
-      tripId: tripObj._id, //eslint-disable-line
-      amount: Number(tripObj.tripAmt),
-      userIdTo: tripObj.driverId,
-    });
-    transactionOwner.saveAsync().then((transactionRider) => {
-      const returnObj = {
-        success: true,
-        message: '',
-        data: {},
-      };
-      returnObj.data.user = transactionRider;
-      returnObj.message = 'Transaction created successfully';
-    });
-  }
+// function saveTransaction(tripObj) {
+//     const transactionOwner = new Transaction({
+//         userIdFrom: tripObj.riderId,
+//         tripId: tripObj._id, //eslint-disable-line
+//         amount: Number(tripObj.tripAmt),
+//         userIdTo: tripObj.driverId,
+//     });
+//     transactionOwner.saveAsync().then((transactionRider) => {
+//         const returnObj = {
+//             success: true,
+//             message: '',
+//             data: {},
+//         };
+//         returnObj.data.user = transactionRider;
+//         returnObj.message = 'Transaction created successfully';
+//     });
+// }
 export default {
     checkSaveCard,
     addCard,
     removeCard,
-    updateCard
+    updateCard,
+    cardPay
 }
 
