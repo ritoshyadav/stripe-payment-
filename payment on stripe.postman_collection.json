@@ -1,0 +1,611 @@
+{
+	"id": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+	"name": "payment on stripe",
+	"description": "",
+	"order": [
+		"4d715282-b409-bc18-542a-d35d193d874c",
+		"1d195266-7156-28de-e539-3b3568b983d8",
+		"b5851189-c736-5981-9ebc-06c7921d055b",
+		"1569a920-afd3-27d8-55aa-ae9ea25fb46c",
+		"aad64fdc-f3aa-c353-ff2d-2963afb02dc7",
+		"a77d82a9-0146-b096-7747-ff5ae585ed59",
+		"85ead148-32a2-7858-4529-684de558d177",
+		"04adb935-851a-d219-5dc5-6abcc13f9964",
+		"d62ccfae-f5ac-0d7c-5a0b-837586d915c2",
+		"f570630b-a033-baa4-8248-173423c6ceee",
+		"b0ede6d4-9d43-c87d-65e2-f178a207f291",
+		"6da3201d-2d08-4403-8d91-72421cc617e5",
+		"2449d2a2-b851-41be-c7f7-a57552918059",
+		"bacaa551-bca0-6840-773e-27b840fffb1b",
+		"7f053677-afbe-1b3b-fc6f-786fc256c959",
+		"31477e28-5337-5e0b-fd16-02128aae099f",
+		"955fb593-acb4-292e-3b96-39723be3555b"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1555068536256,
+	"owner": "6761677",
+	"public": false,
+	"requests": [
+		{
+			"id": "04adb935-851a-d219-5dc5-6abcc13f9964",
+			"url": "localhost:4508/payments/removecard",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/removecard",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\",\n\t\"fingerprint\":\"YpohCfF7r23u0VCM\"\n}"
+		},
+		{
+			"id": "1569a920-afd3-27d8-55aa-ae9ea25fb46c",
+			"url": "localhost:4508/payments/addCard",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/addCard",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\",\n\t\"expiryMonth\": \"10\",\n    \"expiryYear\": \"23\",\n    \"cardNumber\": \"5200828282828210\",\n    \"cvc\": \"284\",\n\t\"saveCard\":1\n}"
+		},
+		{
+			"id": "1d195266-7156-28de-e539-3b3568b983d8",
+			"url": "localhost:4508/payments/cardpay",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/cardpay",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\",\n\t\"amount\":100,\n\t\"currency\":\"usd\"\n}"
+		},
+		{
+			"id": "2449d2a2-b851-41be-c7f7-a57552918059",
+			"url": "localhost:4508/payments/updateCard",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/updateCard",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\",\n\t\"fingerprint\":\"YpohCfF7r23u0VCM\"\n}"
+		},
+		{
+			"id": "31477e28-5337-5e0b-fd16-02128aae099f",
+			"url": "localhost:4508/payments/addCard",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/addCard",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\",\n\t\"expiryMonth\": \"10\",\n    \"expiryYear\": \"23\",\n    \"cardNumber\": \"5200828282828210\",\n    \"cvc\": \"284\",\n\t\"saveCard\":1\n}"
+		},
+		{
+			"id": "4d715282-b409-bc18-542a-d35d193d874c",
+			"url": "localhost:4508/payments/cardpay",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/cardpay",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\",\n\t\"amount\":100,\n\t\"currency\":\"usd\"\n}"
+		},
+		{
+			"id": "6da3201d-2d08-4403-8d91-72421cc617e5",
+			"url": "localhost:4508/payments/removeCard",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/removeCard",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\",\n\t\"fingerprint\":\"YpohCfF7r23u0VCM\"\n}"
+		},
+		{
+			"id": "7f053677-afbe-1b3b-fc6f-786fc256c959",
+			"url": "localhost:4508/payments/addCard",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/addCard",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\",\n\t\"expiryMonth\": \"10\",\n    \"expiryYear\": \"23\",\n    \"cardNumber\": \"5555555555554444\",\n    \"cvc\": \"284\",\n\t\"saveCard\":1\n}"
+		},
+		{
+			"id": "85ead148-32a2-7858-4529-684de558d177",
+			"url": "localhost:4508/payments/removecard",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/removecard",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\",\n\t\"fingerprint\":\"YpohCfF7r23u0VCM\"\n}"
+		},
+		{
+			"id": "955fb593-acb4-292e-3b96-39723be3555b",
+			"url": "localhost:4508/payments/checkSaveCard",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/checkSaveCard",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\"\n}"
+		},
+		{
+			"id": "a77d82a9-0146-b096-7747-ff5ae585ed59",
+			"url": "localhost:4508/payments/addCard",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/addCard",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\",\n\t\"expiryMonth\": \"10\",\n    \"expiryYear\": \"23\",\n    \"cardNumber\": \"5200828282828210\",\n    \"cvc\": \"284\",\n\t\"saveCard\":1\n}"
+		},
+		{
+			"id": "aad64fdc-f3aa-c353-ff2d-2963afb02dc7",
+			"url": "localhost:4508/payments/addCard",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/addCard",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\",\n\t\"expiryMonth\": \"10\",\n    \"expiryYear\": \"23\",\n    \"cardNumber\": \"5200828282828210\",\n    \"cvc\": \"284\",\n\t\"saveCard\":1\n}"
+		},
+		{
+			"id": "b0ede6d4-9d43-c87d-65e2-f178a207f291",
+			"url": "localhost:4508/payments/addCard",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/addCard",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\",\n\t\"expiryMonth\": \"10\",\n    \"expiryYear\": \"23\",\n    \"cardNumber\": \"5555555555554444\",\n    \"cvc\": \"284\",\n\t\"saveCard\":1\n}"
+		},
+		{
+			"id": "b5851189-c736-5981-9ebc-06c7921d055b",
+			"url": "localhost:4508/payments/updateCard",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/updateCard",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\",\n\t\"fingerprint\":\"YpohCfF7r23u0VCM\"\n}"
+		},
+		{
+			"id": "bacaa551-bca0-6840-773e-27b840fffb1b",
+			"url": "localhost:4508/payments/updateCard",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/updateCard",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\",\n\t\"fingerprint\":\"ZnpRy6aQcf34zxVc\"\n}"
+		},
+		{
+			"id": "d62ccfae-f5ac-0d7c-5a0b-837586d915c2",
+			"url": "localhost:4508/payments/addCard",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/addCard",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\",\n\t\"expiryMonth\": \"10\",\n    \"expiryYear\": \"23\",\n    \"cardNumber\": \"5200828282828210\",\n    \"cvc\": \"284\",\n\t\"saveCard\":1\n}"
+		},
+		{
+			"id": "f570630b-a033-baa4-8248-173423c6ceee",
+			"url": "localhost:4508/payments/addCard",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZhMmVmMjE2ZGUxMzJmNGQ1NDhiYzciLCJyb2xlIjoib3duZXIiLCJlbWFpbCI6ImdhZ2FuZGVlcC5zZGVpQGdtYWlsLmNvbSIsInN0YXR1cyI6IlZFUklGSUVEIiwiY29tcGFueUlkIjoiNWM2YTJlZjIxNmRlMTMyZjRkNTQ4YmM2IiwiaWF0IjoxNTU0OTc5NTk4fQ.HxO82A5sM9PqzIUiV0tM6yHP5gz84p3jmf3KSnK8EMM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:4508/payments/addCard",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "6b3d3695-d4a0-8f57-3629-283a6c3086c2",
+			"rawModeData": "{\n\t\"email\":\"gagandeep.sdei@gmail.com\",\n\t\"expiryMonth\": \"10\",\n    \"expiryYear\": \"23\",\n    \"cardNumber\": \"5200828282828210\",\n    \"cvc\": \"284\",\n\t\"saveCard\":1\n}"
+		}
+	]
+}
