@@ -41,12 +41,12 @@ function details(req, res) {
     console.log(id)
 
     if (!ObjectID.isValid(id)) {
-        return res.status(404).send();
+        return res.status(405).send();
     }
 
     Teachermodel.findOne({
         _id: id,
-        _creator: req.user._id
+        // _creator: req.user._id
     }).then((teacher) => {
         if (!teacher) {
             return res.status(404).send();

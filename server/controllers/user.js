@@ -18,6 +18,8 @@ import _ from 'lodash';
 //         .catch(next);
 //     },
 // }
+
+
 function create(req, res){
     console.log('welcome to controllers')
    var body=_.pick(req.body,['email','password']);
@@ -27,7 +29,7 @@ userCreate.save().then(()=>{
     return userCreate.generateAuthToken();
     //    res.send(user);
     }).then((token) => {
-        res.header('x-auth',token).send(userCreate);
+        res.header('x-auth',token).status(200).send(userCreate);
     }).catch((e)=>{
         res.status(400).send(e);
     })
@@ -55,10 +57,8 @@ userCreate.save().then(()=>{
 
 
 function show(req, res){
-    res.send(req.user)
+    res.status(200).send(req.user)
 };
-
-
 
 function login(req,res){
     var body=_.pick(req.body,['email','password']);
@@ -71,6 +71,7 @@ function login(req,res){
         res.status(400).send();
     });
 };
+
 
 function del(req, res) {
     req.user.removeToken(req.token).then(()=>{

@@ -2,6 +2,11 @@ import AssignModel from './../model/schemas/assign';
 var { ObjectID } = require('mongodb');
 
 //Create Assign tution to Teacher
+/**
+   * Sample Request to Welcome New User
+   * @group Users
+   * @route POST /api/assign/create
+   */
 function create(req, res) {
     console.log('welcome to controller')
     var AssignCeate = new AssignModel({
