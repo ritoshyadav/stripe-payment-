@@ -7,19 +7,15 @@ export default (app) => {
  * This function comment is parsed by doctrine
  * @group Teacher
  * @route POST /Teacher/create
- * @param {Teacher.model} teacher.body.required - the new point
- * @property {string} x-auth.required
+ * @param {User.model} x-auth.header
+ * @param {Teacher.model} Teacher.body.required - the new point
+ */ 
+/**
+ * @typedef Teacher
+ * @property {string} teacher_id  
+ * @property {string} fullName
  */
 
- /** 
- * @typedef Teacher
- * @property {string} email.required
- * @property {string} password.required
- */
-/**
- * @typedef headers
- * @property {string} x-auth.required
- */
    
     app.post(`${prefix}create`, AuthenticateControllers.authenticate, TeacherControllers.create);
      /**
